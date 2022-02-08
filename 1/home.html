@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Not Found Webpage</title>
+  </head>
+  <body>
+    <div class="title">404 NOT FOUND</div>
+    <div class="container">
+      <img class="image" src="./Scarecrow.png" alt="" />
+      <div class="note">
+        <h1>I have Bad news for you</h1>
+        <p class="description">
+          The page you are looking for might be removed or is temorarily
+          unavailable
+        </p>
+        <button class="btn">Back To HomePage</button>
+      </div>
+    </div>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 40px 0 0 20px;
+    }
+    .container {
+      height: 100%;
+      width: 100%;
+      margin: 6vw 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      /* padding: 5rem; */
+    }
+    .note {
+      display: flex;
+      margin-left: 5%;
+      flex-direction: column;
+      width: 30%;
+    }
+    .note h1 {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 4vw;
+    }
+    .image {
+      height: 30%;
+      width: 30%;
+      margin-bottom: 5vh;
+    }
+    .description {
+      margin-top: 1rem;
+      display: flex;
+      width: 70%;
+      font-size: 1.5vw;
+      color: grey;
+    }
+    .btn {
+      /* width: 20rem; */
+      color: white;
+      background-color: rgb(41, 40, 40);
+      /* height: 5rem; */
+      padding: 1rem 4rem 1rem 4rem;
+      margin-top: 4vh;
+      font-size: x-large;
+      cursor: pointer;
+    }
+    @media (max-width: 1200px) {
+      .container {
+        /* flex-direction: column; */
+        display: block;
+        /* align-items: baseline; */
+        margin: 0;
+        width: 100%;
+      }
+      .image {
+        height: 80%;
+        width: 80%;
+        margin: 2rem;
+      }
+      .note h1 {
+        font-size: xx-large;
+        width: 60vw;
+      }
+      .description {
+        font-size: large;
+        width: 60vw;
+      }
+      .btn {
+        width: 15rem;
+        color: white;
+        font-size: medium;
+        padding: 0 auto;
+        background-color: rgb(41, 40, 40);
+        padding: 1rem 2.6rem;
+        margin-top: 30%;
+        cursor: pointer;
+        display: flex;
+      }
+    }
+  </style>
+</html>
